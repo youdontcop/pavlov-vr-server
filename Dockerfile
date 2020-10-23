@@ -10,7 +10,7 @@ RUN chmod +x steamcmd.sh
 RUN chown -R steam:steam /home/steam
 
 USER steam
-RUN ./steamcmd.sh +login anonymous +force_install_dir /home/steam/pavlovserver +app_update 622970 +exit
+RUN ./steamcmd.sh +login anonymous +force_install_dir /home/steam/pavlovserver +app_update 622970 -beta shack +exit
 RUN chmod +x ~/pavlovserver/PavlovServer.sh
 RUN mkdir -p ~/pavlovserver/Pavlov/Saved/Config/LinuxServer
 
